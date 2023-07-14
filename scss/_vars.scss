@@ -1,0 +1,27 @@
+:root {
+    // colors
+    --INDEPENDENCE: #48556a;
+    --SLATE-GRAY: #6d7f97;
+    --CRAYOLAS-CADET-BLUE: #9eafc2;
+    --ANTI-FLASH-WHITE: #ecf2f8;
+
+    --manrope: 'Manrope', sans-serif;
+}
+
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope/Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/Manrope/Manrope-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope/Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/Manrope/Manrope-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+

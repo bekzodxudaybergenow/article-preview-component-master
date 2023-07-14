@@ -1,0 +1,17 @@
+@import './nomalize';
+@import './vars';
+
+body {
+    font-family: var(--manrope);
+    font-size: 13px;
+    background-color: var(--ANTI-FLASH-WHITE);
+}
+.wrapper-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.hidden {
+    display: none;
+}
