@@ -1,5 +1,14 @@
 @import './nomalize';
 @import './vars';
+@import './card';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: var(--manrope);
@@ -14,4 +23,7 @@ body {
 }
 .hidden {
     display: none;
+}
+h1, h2, h3, h4 {
+    margin: 0;
 }
