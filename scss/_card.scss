@@ -69,6 +69,13 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.share-btn-bg {
+    background-color: var(--INDEPENDENCE);
+    & path {
+        fill: var(--WHITE);
+    }
 }
 .share-list {
     display: flex;

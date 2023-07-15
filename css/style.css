@@ -412,6 +412,14 @@ template {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.share-btn-bg {
+  background-color: var(--INDEPENDENCE);
+}
+.share-btn-bg path {
+  fill: var(--WHITE);
 }
 
 .share-list {
