@@ -333,14 +333,14 @@ template {
   display: flex;
   max-width: 730px;
   height: 280px;
-  border-radius: 10px;
-  overflow: hidden;
   box-shadow: -5px 24px 45px rgb(219, 228, 235);
 }
 
 .card-image {
   width: 285px;
   background-color: var(--SLATE-GRAY);
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
 }
 .card-image img {
   -o-object-fit: cover;
@@ -353,6 +353,8 @@ template {
   max-width: 445px;
   background-color: var(--WHITE);
   padding: 34px 40px 32px 40px;
+  position: relative;
+  border-radius: 0 10px 10px 0;
 }
 
 .card-content-title {
@@ -410,6 +412,49 @@ template {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.share-list {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 96px;
+  right: -68px;
+  list-style: none;
+  background-color: var(--INDEPENDENCE);
+  padding: 18px 39px;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px 5px var(--ANTI-FLASH-WHITE);
+}
+.share-list::after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  border-top: 15px solid var(--INDEPENDENCE);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  transform: translateX(-50%);
+}
+
+.share-list-item:not(:last-child):not(:first-child) {
+  margin-right: 14px;
+}
+
+.share-list-item-text {
+  color: var(--CRAYOLAS-CADET-BLUE);
+  text-transform: uppercase;
+  margin-right: 21px;
+  letter-spacing: 4px;
+  line-height: 16px;
+}
+
+.share-list-link {
+  width: 20px;
+  height: 20px;
+}
+.share-list-link img {
+  display: block;
 }
 
 *,
