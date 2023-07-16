@@ -1,6 +1,7 @@
 @import './nomalize';
 @import './vars';
 @import './card';
+@import './media';
 
 *,
 *::before,
@@ -26,4 +27,18 @@ body {
 }
 h1, h2, h3, h4 {
     margin: 0;
+}
+
+// mobile
+@media screen and (max-width: 425px)  {
+    .wrapper-row {
+        margin-top: 20px;
+        align-items: flex-start;
+    }
+}
+// mobile
+@media screen and (max-width: 375px) {
+    .wrapper-row {
+        margin-top: 0;
+    }
 }

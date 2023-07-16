@@ -1,7 +1,6 @@
 const body = document.querySelector('body');
 const shareBtn = document.querySelector('.share-btn');
 const shareList = document.querySelector('.share-list');
-const overlay = document.querySelector('.overlay');
 
 
 

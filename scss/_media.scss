@@ -1,0 +1,81 @@
+// tablet
+@media screen and (max-width: 768px) {
+    .wrapper-row {
+        align-items: flex-start;
+    }
+    .card {
+        flex-direction: column;
+        min-height: 512px;
+        max-width: 327px;
+     }
+     .card-image {
+        width: 327px;
+        min-height: 200px;
+        border-radius: 10px 10px 0 0;
+        
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .card-content {
+        padding: 40px 34px 20px;
+        border-radius: 0 0 10px 10px;
+    }
+    .card-content-desc {
+        margin-bottom: 34px;
+    }
+}
+// small-tablet
+@media screen and (max-width: 590px) {
+    .card-content {
+        padding: 40px 34px 12px;
+    }
+    .share-btn {
+        position: relative;
+        z-index: 1;    
+    }
+    .share-btn-bg {
+        background-color: var(--SLATE-GRAY);
+        & path {
+            fill: var(--WHITE);
+        }
+    }
+    .share-list {
+        height: 64px;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 22px 39px; 
+        border-radius: 0 0 10px 10px;
+    
+        &::after {
+            border: none;
+        }
+    }
+}
+// mobile
+@media screen and (max-width: 375px) {
+    .card {
+        height: auto;
+        max-width: 100%;
+     }
+     .card-image {
+        width: 100%;
+        min-height: 200px;
+        border-radius: 0;
+        
+        & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .card-content {
+        border-radius: 0;
+    }
+    .share-list {
+        border-radius: 0;
+    }
+}
