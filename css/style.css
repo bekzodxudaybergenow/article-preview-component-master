@@ -567,16 +567,4 @@ body {
 
 h1, h2, h3, h4 {
   margin: 0;
-}
-
-@media screen and (max-width: 425px) {
-  .wrapper-row {
-    margin-top: 20px;
-    align-items: flex-start;
-  }
-}
-@media screen and (max-width: 375px) {
-  .wrapper-row {
-    margin-top: 0;
-  }
 }/*# sourceMappingURL=style.css.map */
